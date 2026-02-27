@@ -107,3 +107,7 @@ else:
     insight_text += "📊 Team performance has improvement potential. Coaching recommended."
 
 st.success(insight_text)
+st.metric("Level", row["level"])
+if row["level"] == "🔥 Pro":
+    st.balloons()
+    st.success("🎉 Pro Performer Achieved! Outstanding performance!")
