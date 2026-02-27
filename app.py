@@ -54,8 +54,13 @@ if st.session_state.role == "admin":
     admin_mode = st.sidebar.checkbox("Enable Admin Mode")
 
 # ---------------- SESSION DATA STORAGE ----------------
+
 if "employee_data" not in st.session_state:
     st.session_state.employee_data = pd.read_csv("kpi_data.csv")
+
+# Always sync session with latest CSV
+latest_data = pd.read_csv("kpi_data.csv")
+st.session_state.employee_data = latest_data.copy()
 
 df = st.session_state.employee_data
 
