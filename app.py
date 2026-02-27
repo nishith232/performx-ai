@@ -340,3 +340,36 @@ else:
     decisions += "📊 Recommend customer-experience training."
 
 st.info(decisions)
+
+# ---------------- EXECUTIVE AI SUMMARY (STEP 5) ----------------
+st.header("🧾 Executive AI Summary")
+
+avg_score = df["score"].mean()
+avg_rating = df["customer_rating"].mean()
+attendance_risk = len(df[df["attendance"] < 90])
+top_role = df.groupby("role_type")["score"].mean().idxmax()
+
+summary = ""
+
+# Performance analysis
+if avg_score > 75:
+    summary += "✅ Overall workforce performance is strong. "
+elif avg_score > 60:
+    summary += "⚠ Workforce performance is moderate with improvement opportunities. "
+else:
+    summary += "🚨 Workforce performance requires managerial intervention. "
+
+# Customer satisfaction insight
+if avg_rating > 4.5:
+    summary += "Customer satisfaction levels are excellent. "
+else:
+    summary += "Customer satisfaction can be improved through coaching initiatives. "
+
+# Attendance insight
+if attendance_risk > 0:
+    summary += f"There are attendance risks detected among {attendance_risk} employees. "
+
+# Role intelligence insight
+summary += f"The {top_role} team currently demonstrates the strongest performance contribution."
+
+st.success(summary)
