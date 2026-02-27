@@ -54,11 +54,9 @@ if st.session_state.role == "admin":
     admin_mode = st.sidebar.checkbox("Enable Admin Mode")
 
 # ---------------- SESSION DATA STORAGE ----------------
-
 if "employee_data" not in st.session_state:
     st.session_state.employee_data = pd.read_csv("kpi_data.csv")
 
-# Always sync session with latest CSV
 latest_data = pd.read_csv("kpi_data.csv")
 st.session_state.employee_data = latest_data.copy()
 
@@ -139,8 +137,10 @@ st.header("🏅 Leaderboard")
 leaderboard = df.sort_values("score", ascending=False)
 st.dataframe(leaderboard)
 
-# ---------------- FILTERING ----------------
+# ---------------- FILTERING + SEARCH (STEP 3 ADDED) ----------------
 st.header("🔎 Filter Employees")
+
+search_name = st.text_input("Search Employee by Name")
 
 level_filter = st.selectbox(
     "Filter by Level",
@@ -149,6 +149,10 @@ level_filter = st.selectbox(
 
 if level_filter != "All":
     df = df[df["level"] == level_filter]
+
+# ✅ STEP 3 SEARCH FILTER
+if search_name:
+    df = df[df["employee"].str.contains(search_name, case=False, na=False)]
 
 # ---------------- PERFORMANCE CHART ----------------
 st.header("📊 Performance Scores")
@@ -197,7 +201,8 @@ if admin_mode:
         )
         save_data()
         st.success("Employee Added Successfully ✅")
-    # -------- EDIT / UPDATE EMPLOYEE --------
+
+    # -------- EDIT EMPLOYEE --------
     st.sidebar.subheader("✏️ Edit Employee")
 
     edit_emp = st.sidebar.selectbox(
@@ -210,21 +215,10 @@ if admin_mode:
         st.session_state.employee_data["employee"] == edit_emp
     ].iloc[0]
 
-    edit_sales = st.sidebar.number_input(
-        "Edit Sales", 0, 200, int(edit_row["sales"])
-    )
-
-    edit_deliveries = st.sidebar.number_input(
-        "Edit Deliveries", 0, 200, int(edit_row["deliveries"])
-    )
-
-    edit_rating = st.sidebar.slider(
-        "Edit Customer Rating ⭐", 1.0, 5.0, float(edit_row["customer_rating"])
-    )
-
-    edit_attendance = st.sidebar.number_input(
-        "Edit Attendance %", 0, 100, int(edit_row["attendance"])
-    )
+    edit_sales = st.sidebar.number_input("Edit Sales", 0, 200, int(edit_row["sales"]))
+    edit_deliveries = st.sidebar.number_input("Edit Deliveries", 0, 200, int(edit_row["deliveries"]))
+    edit_rating = st.sidebar.slider("Edit Customer Rating ⭐", 1.0, 5.0, float(edit_row["customer_rating"]))
+    edit_attendance = st.sidebar.number_input("Edit Attendance %", 0, 100, int(edit_row["attendance"]))
 
     if st.sidebar.button("Update Employee"):
         idx = st.session_state.employee_data[
@@ -237,8 +231,9 @@ if admin_mode:
         st.session_state.employee_data.loc[idx, "attendance"] = edit_attendance
 
         save_data()
-
         st.success(f"{edit_emp} updated successfully ✅")
+
+    # -------- REMOVE EMPLOYEE --------
     st.sidebar.subheader("❌ Remove Employee")
 
     remove_emp = st.sidebar.selectbox(
@@ -254,8 +249,8 @@ if admin_mode:
         )
         save_data()
         st.warning(f"{remove_emp} removed.")
-        
-        # ---------------- AI MANAGER INSIGHTS ----------------
+
+# ---------------- AI MANAGER INSIGHTS ----------------
 st.header("🧠 AI Manager Insights")
 
 avg_score = df["score"].mean()
@@ -269,15 +264,9 @@ insight_text = f"""
 """
 
 if len(low_attendance) > 0:
-    insight_text += f"\n⚠ Attendance Risk detected for {len(low_attendance)} employees. Manager intervention recommended."
-
-if avg_score > 75:
-    insight_text += "\n✅ Overall team performance is strong."
-else:
-    insight_text += "\n📊 Team performance improvement recommended."
+    insight_text += f"\n⚠ Attendance Risk detected for {len(low_attendance)} employees."
 
 st.success(insight_text)
-
 
 # ---------------- AI MANAGER DECISION DASHBOARD ----------------
 st.header("📋 AI Manager Decision Dashboard")
