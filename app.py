@@ -96,8 +96,10 @@ insight_text = f"""
 
 """
 
-if len(low_attendance) > 0:
-    insight_text += f"⚠ Attendance Risk detected for: {', '.join(low_attendance)}.\n"
+low_attendance_count = len(low_attendance)
+
+if low_attendance_count > 0:
+    insight_text += f"⚠ Attendance Risk detected for {low_attendance_count} employees. Manager intervention recommended.\n"
 
 if avg_score > 75:
     insight_text += "✅ Overall team performance is strong. Consider rewarding high performers."
