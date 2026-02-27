@@ -192,7 +192,48 @@ if admin_mode:
         )
         save_data()
         st.success("Employee Added Successfully ✅")
+    # -------- EDIT / UPDATE EMPLOYEE --------
+    st.sidebar.subheader("✏️ Edit Employee")
 
+    edit_emp = st.sidebar.selectbox(
+        "Select Employee to Edit",
+        st.session_state.employee_data["employee"],
+        key="edit_select"
+    )
+
+    edit_row = st.session_state.employee_data[
+        st.session_state.employee_data["employee"] == edit_emp
+    ].iloc[0]
+
+    edit_sales = st.sidebar.number_input(
+        "Edit Sales", 0, 200, int(edit_row["sales"])
+    )
+
+    edit_deliveries = st.sidebar.number_input(
+        "Edit Deliveries", 0, 200, int(edit_row["deliveries"])
+    )
+
+    edit_rating = st.sidebar.slider(
+        "Edit Customer Rating ⭐", 1.0, 5.0, float(edit_row["customer_rating"])
+    )
+
+    edit_attendance = st.sidebar.number_input(
+        "Edit Attendance %", 0, 100, int(edit_row["attendance"])
+    )
+
+    if st.sidebar.button("Update Employee"):
+        idx = st.session_state.employee_data[
+            st.session_state.employee_data["employee"] == edit_emp
+        ].index[0]
+
+        st.session_state.employee_data.loc[idx, "sales"] = edit_sales
+        st.session_state.employee_data.loc[idx, "deliveries"] = edit_deliveries
+        st.session_state.employee_data.loc[idx, "customer_rating"] = edit_rating
+        st.session_state.employee_data.loc[idx, "attendance"] = edit_attendance
+
+        save_data()
+
+        st.success(f"{edit_emp} updated successfully ✅")
     st.sidebar.subheader("❌ Remove Employee")
 
     remove_emp = st.sidebar.selectbox(
