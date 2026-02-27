@@ -59,6 +59,10 @@ if "employee_data" not in st.session_state:
 
 df = st.session_state.employee_data
 
+# ---------------- SAVE DATA FUNCTION ----------------
+def save_data():
+    st.session_state.employee_data.to_csv("kpi_data.csv", index=False)
+
 # ---------------- SCORING ENGINE ----------------
 df["score"] = (
     df["sales"] * 0.4 +
@@ -186,7 +190,7 @@ if admin_mode:
             [st.session_state.employee_data, new_row],
             ignore_index=True
         )
-
+        save_data()
         st.success("Employee Added Successfully ✅")
 
     st.sidebar.subheader("❌ Remove Employee")
@@ -202,7 +206,7 @@ if admin_mode:
                 st.session_state.employee_data["employee"] != remove_emp
             ]
         )
-
+        save_data()
         st.warning(f"{remove_emp} removed.")
         
         # ---------------- AI MANAGER INSIGHTS ----------------
