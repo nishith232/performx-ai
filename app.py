@@ -1,6 +1,36 @@
 import streamlit as st
 import pandas as pd
 
+# ---------------- LOGIN USERS ----------------
+USERS = {
+    "admin": {"password": "admin123", "role": "admin"},
+    "manager": {"password": "manager123", "role": "user"}
+}
+
+# ---------------- LOGIN SESSION ----------------
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+    st.session_state.role = None
+
+# ---------------- LOGIN PAGE ----------------
+if not st.session_state.logged_in:
+
+    st.title("🔐 PerformX AI Login")
+
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+
+    if st.button("Login"):
+        if username in USERS and USERS[username]["password"] == password:
+            st.session_state.logged_in = True
+            st.session_state.role = USERS[username]["role"]
+            st.success("Login Successful ✅")
+            st.rerun()
+        else:
+            st.error("Invalid username or password")
+
+    st.stop()
+
 # ---------------- PAGE SETTINGS ----------------
 st.set_page_config(
     page_title="PerformX AI",
@@ -11,9 +41,17 @@ st.set_page_config(
 st.title("🏆 PerformX AI — Gamified Performance Feedback Agent")
 st.caption("Transforming KPIs into Motivation using AI Gamification")
 
-# ---------------- ADMIN PANEL ----------------
+# ---------------- SIDEBAR ----------------
 st.sidebar.header("🔐 Admin Controls")
-admin_mode = st.sidebar.checkbox("Enable Admin Mode")
+
+if st.sidebar.button("Logout"):
+    st.session_state.logged_in = False
+    st.session_state.role = None
+    st.rerun()
+
+admin_mode = False
+if st.session_state.role == "admin":
+    admin_mode = st.sidebar.checkbox("Enable Admin Mode")
 
 # ---------------- SESSION DATA STORAGE ----------------
 if "employee_data" not in st.session_state:
@@ -120,47 +158,9 @@ st.progress(int(row["score"]))
 
 st.info("💡 You're only a few points away from the next level! Keep going!")
 
-# ---------------- AI MANAGER INSIGHTS ----------------
-st.header("🧠 AI Manager Insights")
-
-avg_score = df["score"].mean()
-best_employee = df.loc[df["score"].idxmax()]["employee"]
-low_attendance = df[df["attendance"] < 90]["employee"].tolist()
-
-insight_text = f"""
-📈 Average Team Performance Score: {avg_score:.2f}
-
-🏆 Top Performer: {best_employee}
-"""
-
-if len(low_attendance) > 0:
-    insight_text += f"\n⚠ Attendance Risk detected for {len(low_attendance)} employees."
-
-st.success(insight_text)
-
 if row["level"] == "🔥 Pro":
     st.balloons()
-    st.success("🎉 Pro Performer Achieved! Outstanding performance!")
-
-# ---------------- AI MANAGER DECISION DASHBOARD ----------------
-st.header("📋 AI Manager Decision Dashboard")
-
-top_performers = df[df["score"] > 80]["employee"].tolist()
-low_performers = df[df["score"] < 55]["employee"].tolist()
-attendance_risk = df[df["attendance"] < 90]["employee"].tolist()
-
-decisions = ""
-
-if len(top_performers) > 0:
-    decisions += f"🏆 Reward Recommendation: Recognize {len(top_performers)} high performers.\n\n"
-
-if len(low_performers) > 0:
-    decisions += f"📚 Coaching Needed for {len(low_performers)} employees.\n\n"
-
-if len(attendance_risk) > 0:
-    decisions += f"⏰ Monitor attendance for {len(attendance_risk)} employees.\n\n"
-
-st.info(decisions)
+    st.success("🎉 Pro Performer Achieved!")
 
 # ---------------- ADMIN CONTROLS ----------------
 if admin_mode:
@@ -189,7 +189,6 @@ if admin_mode:
 
         st.success("Employee Added Successfully ✅")
 
-    # -------- REMOVE EMPLOYEE --------
     st.sidebar.subheader("❌ Remove Employee")
 
     remove_emp = st.sidebar.selectbox(
