@@ -62,8 +62,11 @@ st.session_state.employee_data = latest_data.copy()
 
 df = st.session_state.employee_data
 # ---------------- ENSURE ROLE COLUMN EXISTS ----------------
+# -------- ENSURE ROLE COLUMN EXISTS & SAVE TO CSV --------
 if "role_type" not in df.columns:
-    df["role_type"] = "Sales"   # default role
+    df["role_type"] = "Sales"
+    st.session_state.employee_data = df
+    df.to_csv("kpi_data.csv", index=False)
 
 # ---------------- SAVE DATA FUNCTION ----------------
 def save_data():
@@ -275,7 +278,6 @@ if admin_mode:
         st.session_state.employee_data.loc[idx, "customer_rating"] = edit_rating
         st.session_state.employee_data.loc[idx, "attendance"] = edit_attendance
         st.session_state.employee_data.loc[idx, "role_type"] = edit_role
-        
         save_data()
         st.success(f"{edit_emp} updated successfully ✅")
 
