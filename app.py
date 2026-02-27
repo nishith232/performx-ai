@@ -57,6 +57,32 @@ def feedback(row):
 
 df["feedback"] = df.apply(feedback, axis=1)
 
+# ---------------- EXECUTIVE AI SCORECARD ----------------
+
+st.header("🏢 Executive AI Scorecard")
+
+avg_score = df["score"].mean()
+top_employee = df.loc[df["score"].idxmax()]["employee"]
+avg_rating = df["customer_rating"].mean()
+attendance_risk_count = len(df[df["attendance"] < 90])
+
+# Workforce health classification
+if avg_score > 75:
+    health_status = "🟢 Strong Workforce Performance"
+elif avg_score > 60:
+    health_status = "🟡 Moderate Performance"
+else:
+    health_status = "🔴 Improvement Needed"
+
+col1, col2, col3, col4 = st.columns(4)
+
+col1.metric("📊 Avg Performance Score", f"{avg_score:.1f}")
+col2.metric("🏆 Top Performer", top_employee)
+col3.metric("⭐ Avg Customer Rating", f"{avg_rating:.2f}")
+col4.metric("⚠ Attendance Risks", attendance_risk_count)
+
+st.success(f"AI Assessment: {health_status}")
+
 # ---------------- LEADERBOARD ----------------
 st.header("🏅 Leaderboard")
 leaderboard = df.sort_values("score", ascending=False)
