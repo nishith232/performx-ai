@@ -80,3 +80,28 @@ st.progress(int(row["score"]))
 
 # ---------------- MOTIVATION NUDGE ----------------
 st.info("💡 You're only a few points away from the next level! Keep going!")
+
+# ---------------- AI MANAGER INSIGHTS ----------------
+
+st.header("🧠 AI Manager Insights")
+
+avg_score = df["score"].mean()
+best_employee = df.loc[df["score"].idxmax()]["employee"]
+low_attendance = df[df["attendance"] < 90]["employee"].tolist()
+
+insight_text = f"""
+📈 Average Team Performance Score: {avg_score:.2f}
+
+🏆 Top Performer: {best_employee}
+
+"""
+
+if len(low_attendance) > 0:
+    insight_text += f"⚠ Attendance Risk detected for: {', '.join(low_attendance)}.\n"
+
+if avg_score > 75:
+    insight_text += "✅ Overall team performance is strong. Consider rewarding high performers."
+else:
+    insight_text += "📊 Team performance has improvement potential. Coaching recommended."
+
+st.success(insight_text)
