@@ -61,18 +61,52 @@ latest_data = pd.read_csv("kpi_data.csv")
 st.session_state.employee_data = latest_data.copy()
 
 df = st.session_state.employee_data
+# ---------------- ENSURE ROLE COLUMN EXISTS ----------------
+if "role_type" not in df.columns:
+    df["role_type"] = "Sales"   # default role
 
 # ---------------- SAVE DATA FUNCTION ----------------
 def save_data():
     st.session_state.employee_data.to_csv("kpi_data.csv", index=False)
 
 # ---------------- SCORING ENGINE ----------------
-df["score"] = (
-    df["sales"] * 0.4 +
-    df["deliveries"] * 0.3 +
-    df["customer_rating"] * 10 * 0.2 +
-    df["attendance"] * 0.1
-)
+# ---------------- ROLE-BASED SCORING ENGINE ----------------
+
+def calculate_score(row):
+
+    if row["role_type"] == "Sales":
+        return (
+            row["sales"] * 0.5 +
+            row["deliveries"] * 0.2 +
+            row["customer_rating"] * 10 * 0.2 +
+            row["attendance"] * 0.1
+        )
+
+    elif row["role_type"] == "Support":
+        return (
+            row["sales"] * 0.2 +
+            row["deliveries"] * 0.2 +
+            row["customer_rating"] * 10 * 0.5 +
+            row["attendance"] * 0.1
+        )
+
+    elif row["role_type"] == "Operations":
+        return (
+            row["sales"] * 0.2 +
+            row["deliveries"] * 0.5 +
+            row["customer_rating"] * 10 * 0.2 +
+            row["attendance"] * 0.1
+        )
+
+    else:
+        return (
+            row["sales"] * 0.4 +
+            row["deliveries"] * 0.3 +
+            row["customer_rating"] * 10 * 0.2 +
+            row["attendance"] * 0.1
+        )
+
+df["score"] = df.apply(calculate_score, axis=1)
 
 # ---------------- LEVEL SYSTEM ----------------
 def assign_level(score):
@@ -165,6 +199,7 @@ emp = st.selectbox("Select Employee", df["employee"])
 row = df[df["employee"] == emp].iloc[0]
 
 st.metric("Level", row["level"])
+st.write("Role:", row["role_type"])
 st.write("Badge:", row["badge"])
 st.success(row["feedback"])
 st.progress(int(row["score"]))
@@ -185,6 +220,11 @@ if admin_mode:
     new_deliveries = st.sidebar.number_input("Deliveries", 0, 200, 40)
     new_rating = st.sidebar.slider("Customer Rating ⭐", 1.0, 5.0, 4.0)
     new_attendance = st.sidebar.number_input("Attendance %", 0, 100, 90)
+    
+    new_role = st.sidebar.selectbox(
+    "Employee Role",
+    ["Sales", "Support", "Operations"]
+    )
 
     if st.sidebar.button("Add Employee"):
         new_row = pd.DataFrame([{
@@ -192,7 +232,8 @@ if admin_mode:
             "sales": new_sales,
             "deliveries": new_deliveries,
             "customer_rating": new_rating,
-            "attendance": new_attendance
+            "attendance": new_attendance,
+            "role_type": new_role
         }])
 
         st.session_state.employee_data = pd.concat(
@@ -210,7 +251,11 @@ if admin_mode:
         st.session_state.employee_data["employee"],
         key="edit_select"
     )
-
+    edit_role = st.sidebar.selectbox(
+    "Edit Role",
+    ["Sales", "Support", "Operations"],
+    index=["Sales","Support","Operations"].index(edit_row["role_type"])
+    )
     edit_row = st.session_state.employee_data[
         st.session_state.employee_data["employee"] == edit_emp
     ].iloc[0]
@@ -229,7 +274,8 @@ if admin_mode:
         st.session_state.employee_data.loc[idx, "deliveries"] = edit_deliveries
         st.session_state.employee_data.loc[idx, "customer_rating"] = edit_rating
         st.session_state.employee_data.loc[idx, "attendance"] = edit_attendance
-
+        st.session_state.employee_data.loc[idx, "role_type"] = edit_role
+        
         save_data()
         st.success(f"{edit_emp} updated successfully ✅")
 
