@@ -111,3 +111,35 @@ st.metric("Level", row["level"])
 if row["level"] == "🔥 Pro":
     st.balloons()
     st.success("🎉 Pro Performer Achieved! Outstanding performance!")
+    
+    # ---------------- AI MANAGER DECISION DASHBOARD ----------------
+
+st.header("📋 AI Manager Decision Dashboard")
+
+top_performers = df[df["score"] > 80]["employee"].tolist()
+low_performers = df[df["score"] < 55]["employee"].tolist()
+attendance_risk = df[df["attendance"] < 90]["employee"].tolist()
+
+decisions = ""
+
+# Reward recommendation
+if len(top_performers) > 0:
+    decisions += f"🏆 Reward Recommendation: Recognize {len(top_performers)} high performers with bonuses or incentives.\n\n"
+
+# Coaching recommendation
+if len(low_performers) > 0:
+    decisions += f"📚 Coaching Needed: {len(low_performers)} employees may benefit from performance mentoring.\n\n"
+
+# Attendance action
+if len(attendance_risk) > 0:
+    decisions += f"⏰ Attendance Action: Monitor attendance trends for {len(attendance_risk)} employees.\n\n"
+
+# Customer satisfaction insight
+avg_rating = df["customer_rating"].mean()
+
+if avg_rating > 4.5:
+    decisions += "⭐ Customer Satisfaction is strong across the workforce. Maintain current engagement strategies."
+else:
+    decisions += "📊 Customer satisfaction has improvement potential. Recommend soft-skills training."
+
+st.info(decisions)
