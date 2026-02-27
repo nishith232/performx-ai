@@ -204,3 +204,54 @@ if admin_mode:
         )
 
         st.warning(f"{remove_emp} removed.")
+        
+        # ---------------- AI MANAGER INSIGHTS ----------------
+st.header("🧠 AI Manager Insights")
+
+avg_score = df["score"].mean()
+best_employee = df.loc[df["score"].idxmax()]["employee"]
+low_attendance = df[df["attendance"] < 90]["employee"].tolist()
+
+insight_text = f"""
+📈 Average Team Performance Score: {avg_score:.2f}
+
+🏆 Top Performer: {best_employee}
+"""
+
+if len(low_attendance) > 0:
+    insight_text += f"\n⚠ Attendance Risk detected for {len(low_attendance)} employees. Manager intervention recommended."
+
+if avg_score > 75:
+    insight_text += "\n✅ Overall team performance is strong."
+else:
+    insight_text += "\n📊 Team performance improvement recommended."
+
+st.success(insight_text)
+
+
+# ---------------- AI MANAGER DECISION DASHBOARD ----------------
+st.header("📋 AI Manager Decision Dashboard")
+
+top_performers = df[df["score"] > 80]["employee"].tolist()
+low_performers = df[df["score"] < 55]["employee"].tolist()
+attendance_risk = df[df["attendance"] < 90]["employee"].tolist()
+
+decisions = ""
+
+if len(top_performers) > 0:
+    decisions += f"🏆 Reward Recommendation: Recognize {len(top_performers)} high performers.\n\n"
+
+if len(low_performers) > 0:
+    decisions += f"📚 Coaching Needed for {len(low_performers)} employees.\n\n"
+
+if len(attendance_risk) > 0:
+    decisions += f"⏰ Monitor attendance for {len(attendance_risk)} employees.\n\n"
+
+avg_rating = df["customer_rating"].mean()
+
+if avg_rating > 4.5:
+    decisions += "⭐ Customer satisfaction is strong across workforce."
+else:
+    decisions += "📊 Recommend customer-experience training."
+
+st.info(decisions)
