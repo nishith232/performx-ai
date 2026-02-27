@@ -1,221 +1,723 @@
-employee,sales,deliveries,customer_rating,attendance
-Vikram_1,51,53,4.1,89
-Meena_2,97,33,4.6,99
-Kiran_3,87,43,3.8,84
-Amit_4,64,46,4.5,99
-Pooja_5,95,50,4.6,95
-Divya_6,78,48,4.1,82
-Neha_7,94,43,4.2,86
-Amit_8,98,40,3.9,94
-Sneha_9,72,57,4.2,90
-John_10,96,44,4.4,94
-Kiran_11,85,39,4.8,93
-Rekha_12,62,52,3.9,89
-Nisha_13,55,57,4.1,85
-Anil_14,67,44,4.6,93
-Neha_15,73,41,4.1,90
-Arjun_16,88,50,4.0,89
-Neha_17,79,42,4.1,99
-Divya_18,93,40,4.8,83
-Divya_19,52,55,4.2,90
-Arjun_20,63,59,4.9,92
-Amit_21,91,45,4.3,96
-Ravi_22,66,34,4.1,99
-Madhu_23,66,53,4.5,100
-Bhavna_24,73,37,5.0,86
-Sanjana_25,81,32,4.7,85
-Ravi_26,90,35,4.8,95
-Chaitra_27,54,42,4.3,96
-Varun_28,66,47,4.8,82
-Vikram_29,93,58,4.4,90
-Lakshmi_30,57,39,4.3,96
-Rahul_31,96,58,4.7,98
-Suresh_32,82,59,3.9,91
-Sanjana_33,88,36,4.0,87
-Madhu_34,99,59,4.4,82
-Chaitra_35,70,45,3.8,93
-Deepak_36,65,31,4.1,100
-Kiran_37,55,53,4.4,84
-Madhu_38,99,34,4.0,97
-Tarun_39,60,38,4.4,95
-Amit_40,84,54,4.7,88
-Deepak_41,75,51,4.6,96
-Varun_42,78,33,4.1,84
-Lakshmi_43,51,48,4.5,100
-Divya_44,50,32,4.6,83
-Divya_45,54,58,3.8,92
-Arjun_46,82,37,4.1,97
-Amit_47,84,34,4.7,100
-Rekha_48,80,37,4.7,95
-Pooja_49,56,33,4.6,93
-Swathi_50,76,44,4.8,83
-Sneha_51,53,42,4.7,85
-Manoj_52,62,36,4.4,86
-Swathi_53,61,38,4.4,84
-Praveen_54,85,33,3.9,99
-Rahul_55,55,59,4.7,89
-Neha_56,76,45,4.4,94
-Priya_57,60,42,3.8,94
-Kavya_58,100,55,4.3,95
-Tarun_59,92,52,4.4,88
-Nisha_60,63,60,3.9,99
-Priya_61,97,40,3.9,100
-Gopi_62,82,59,4.8,87
-Priya_63,82,32,4.8,84
-Chaitra_64,54,51,4.8,94
-Vikram_65,86,37,4.5,83
-Ganesh_66,55,43,4.6,100
-Varun_67,70,59,4.1,92
-Manoj_68,66,42,4.0,91
-Keerthi_69,70,59,4.7,84
-Rahul_70,79,49,5.0,85
-Arjun_71,84,36,4.4,86
-Ajay_72,54,58,4.1,91
-Neha_73,78,56,4.5,91
-Ganesh_74,91,46,3.8,99
-Deepak_75,92,33,4.9,86
-Kavya_76,57,58,3.9,99
-Ravi_77,67,39,4.5,92
-Amit_78,93,50,4.8,98
-Ramesh_79,66,58,4.9,83
-Kiran_80,90,43,4.8,83
-Rahul_81,71,54,4.0,90
-Neha_82,97,44,4.5,95
-Tarun_83,50,33,3.9,86
-Madhu_84,52,56,4.2,99
-Ravi_85,77,34,3.9,93
-John_86,72,36,4.6,85
-Ajay_87,99,47,4.9,95
-Ganesh_88,97,34,4.9,89
-Neha_89,61,58,4.3,87
-Lakshmi_90,100,59,4.3,89
-Rohit_91,60,55,4.6,94
-John_92,80,37,4.0,96
-Ajay_93,69,56,4.8,89
-Divya_94,51,51,4.0,92
-Rohit_95,54,60,4.7,93
-Sanjana_96,75,51,5.0,99
-Lakshmi_97,51,33,4.9,90
-Suresh_98,87,60,5.0,83
-Sneha_99,88,43,4.2,92
-Swathi_100,88,46,3.9,100
-Pooja_101,66,31,4.7,82
-Varun_102,84,51,4.7,88
-Tejas_103,77,32,4.9,92
-Ganesh_104,70,51,4.8,91
-Sanjana_105,69,51,4.3,94
-Nisha_106,85,34,4.0,94
-Suresh_107,89,48,4.2,99
-Rahul_108,69,39,4.1,100
-Chaitra_109,91,40,4.4,96
-Amit_110,82,45,4.8,87
-Kiran_111,68,46,4.6,92
-Kiran_112,98,37,4.6,89
-Pooja_113,59,30,3.9,97
-Ganesh_114,99,32,4.3,100
-Pooja_115,95,52,4.3,94
-Manoj_116,59,50,4.6,85
-Swathi_117,64,35,4.8,98
-Keerthi_118,53,47,4.1,85
-Keerthi_119,58,55,4.4,98
-Tarun_120,88,40,4.9,96
-Ganesh_121,96,58,4.4,99
-Praveen_122,60,53,4.8,96
-Kavya_123,98,37,4.8,90
-Varun_124,81,50,4.1,96
-Arjun_125,95,39,4.1,92
-Harsha_126,84,32,4.0,89
-Anil_127,94,34,4.6,84
-Karthik_128,76,40,4.5,95
-Priya_129,63,56,4.3,100
-Anita_130,98,48,4.3,82
-Ajay_131,69,54,4.3,95
-Madhu_132,97,53,4.5,89
-Ramesh_133,64,38,4.3,82
-Anil_134,71,51,4.6,94
-Neha_135,79,59,4.0,99
-Anita_136,75,48,4.5,82
-Kiran_137,91,43,4.0,96
-Suresh_138,53,38,4.3,88
-Keerthi_139,70,40,4.7,94
-Rohit_140,98,60,4.8,90
-Kiran_141,80,30,4.7,83
-Ajay_142,64,50,3.9,83
-Anita_143,65,36,4.8,86
-Manoj_144,58,45,4.6,100
-Amit_145,79,52,4.1,93
-Neha_146,88,49,5.0,85
-Neha_147,69,33,4.5,91
-Rekha_148,93,59,4.9,94
-Pooja_149,54,48,4.6,89
-Sneha_150,94,54,4.2,85
-Rekha_151,100,31,4.2,95
-Tejas_152,54,46,4.6,82
-Karthik_153,81,33,4.3,93
-Keerthi_154,95,34,4.3,98
-Rohit_155,89,55,4.9,97
-Keerthi_156,77,56,4.7,90
-Harsha_157,65,56,4.9,90
-Praveen_158,65,54,4.4,94
-Lakshmi_159,51,45,4.8,87
-Ramesh_160,63,41,4.8,92
-Rohit_161,88,52,4.9,99
-Rahul_162,83,60,4.0,89
-Karthik_163,81,47,4.7,97
-Ramesh_164,78,55,3.8,91
-Divya_165,75,52,4.1,100
-Tejas_166,80,47,4.4,95
-Tarun_167,71,41,4.6,90
-Deepak_168,66,37,3.9,88
-Harsha_169,57,53,4.4,87
-Pooja_170,63,53,4.4,100
-Varun_171,88,39,5.0,88
-Nisha_172,64,41,4.0,82
-Madhu_173,58,38,3.9,83
-Tarun_174,68,52,4.9,97
-Sneha_175,50,48,4.1,97
-Praveen_176,71,35,5.0,90
-Gopi_177,57,56,3.9,97
-Arjun_178,86,50,4.6,86
-Ravi_179,86,60,4.2,89
-Vikram_180,85,54,4.3,89
-Varun_181,74,44,4.9,91
-Naveen_182,77,39,4.5,83
-Ganesh_183,97,33,4.9,88
-Amit_184,66,51,3.9,89
-Suresh_185,85,32,4.0,95
-Praveen_186,94,49,4.4,83
-Divya_187,68,52,4.1,96
-Arjun_188,93,37,4.9,100
-Pooja_189,77,33,4.5,86
-Rohit_190,59,32,3.9,91
-Chaitra_191,97,56,4.5,91
-Praveen_192,57,44,4.6,94
-Rohit_193,82,47,4.4,84
-Chaitra_194,52,58,4.3,92
-Chaitra_195,66,30,3.9,100
-Naveen_196,51,54,4.6,90
-Rekha_197,52,54,4.7,97
-Varun_198,91,44,4.9,87
-Naveen_199,77,50,4.8,84
-Gopi_200,72,43,4.2,85
-Neha_201,71,43,4.6,91
-Bhavna_202,98,47,3.8,84
-Harsha_203,66,40,3.9,94
-Sanjana_204,50,51,4.8,96
-Karthik_205,53,36,4.4,97
-Praveen_206,98,31,4.0,99
-Meena_207,68,44,4.9,97
-Vikram_208,51,50,4.5,89
-Neha_209,69,47,3.8,95
-Kiran_210,64,56,4.9,96
-Vikram_211,91,56,4.0,91
-Sanjana_212,95,38,4.3,97
-Gopi_213,65,44,4.5,94
-Pooja_214,88,46,4.7,86
-Arjun_215,67,54,4.7,95
-Lakshmi_216,100,46,4.1,82
-Nisha_217,96,39,4.8,100
-Ramesh_218,59,44,4.4,93
-Lakshmi_219,85,54,4.5,96
-Harsha_220,62,52,4.1,94
+employee,sales,deliveries,customer_rating,attendance,score,level,badge,feedback,role_type
+Vikram_1,51,53,4.1,89,53.4,🌱 Beginner,Consistent Performer,"Vikram_1, improving attendance can boost performance.",Support
+Meena_2,97,33,4.6,99,67.80000000000001,⭐ Rising,Sales Ninja,Good progress Meena_2. Focus on customer satisfaction.,Operations
+Kiran_3,87,43,3.8,84,63.7,⭐ Rising,Sales Ninja,"Kiran_3, improving attendance can boost performance.",Operations
+Amit_4,64,46,4.5,99,58.3,⭐ Rising,Consistent Performer,Good progress Amit_4. Focus on customer satisfaction.,Operations
+Pooja_5,95,50,4.6,95,71.7,🔥 Pro,Sales Ninja,Good progress Pooja_5. Focus on customer satisfaction.,Sales
+Divya_6,78,48,4.1,82,62.00000000000001,⭐ Rising,Consistent Performer,"Divya_6, improving attendance can boost performance.",Sales
+Neha_7,94,43,4.2,86,67.5,⭐ Rising,Sales Ninja,"Neha_7, improving attendance can boost performance.",Support
+Amit_8,98,40,3.9,94,68.4,⭐ Rising,Sales Ninja,Good progress Amit_8. Focus on customer satisfaction.,Support
+Sneha_9,72,57,4.2,90,63.3,⭐ Rising,Consistent Performer,Good progress Sneha_9. Focus on customer satisfaction.,Sales
+John_10,96,44,4.4,94,69.80000000000001,⭐ Rising,Sales Ninja,Good progress John_10. Focus on customer satisfaction.,Sales
+Kiran_11,85,39,4.8,93,64.60000000000001,⭐ Rising,Customer Hero,Good progress Kiran_11. Focus on customer satisfaction.,Operations
+Rekha_12,62,52,3.9,89,57.1,⭐ Rising,Consistent Performer,"Rekha_12, improving attendance can boost performance.",Operations
+Nisha_13,55,57,4.1,85,55.8,⭐ Rising,Consistent Performer,"Nisha_13, improving attendance can boost performance.",Sales
+Anil_14,67,44,4.6,93,58.5,⭐ Rising,Consistent Performer,Good progress Anil_14. Focus on customer satisfaction.,Sales
+Neha_15,73,41,4.1,90,58.7,⭐ Rising,Consistent Performer,Good progress Neha_15. Focus on customer satisfaction.,Support
+Arjun_16,88,50,4.0,89,67.10000000000001,⭐ Rising,Sales Ninja,"Arjun_16, improving attendance can boost performance.",Sales
+Neha_17,79,42,4.1,99,62.3,⭐ Rising,Consistent Performer,Good progress Neha_17. Focus on customer satisfaction.,Support
+Divya_18,93,40,4.8,83,67.10000000000001,⭐ Rising,Customer Hero,"Divya_18, improving attendance can boost performance.",Sales
+Divya_19,52,55,4.2,90,54.7,🌱 Beginner,Consistent Performer,Good progress Divya_19. Focus on customer satisfaction.,Sales
+Arjun_20,63,59,4.9,92,61.900000000000006,⭐ Rising,Customer Hero,Good progress Arjun_20. Focus on customer satisfaction.,Support
+Amit_21,91,45,4.3,96,68.1,⭐ Rising,Sales Ninja,Good progress Amit_21. Focus on customer satisfaction.,Sales
+Ravi_22,66,34,4.1,99,54.7,🌱 Beginner,Consistent Performer,Good progress Ravi_22. Focus on customer satisfaction.,Support
+Madhu_23,66,53,4.5,100,61.3,⭐ Rising,Consistent Performer,Good progress Madhu_23. Focus on customer satisfaction.,Sales
+Bhavna_24,73,37,5.0,86,58.900000000000006,⭐ Rising,Customer Hero,"Bhavna_24, improving attendance can boost performance.",Operations
+Sanjana_25,81,32,4.7,85,59.9,⭐ Rising,Consistent Performer,"Sanjana_25, improving attendance can boost performance.",Support
+Ravi_26,90,35,4.8,95,65.6,⭐ Rising,Customer Hero,Good progress Ravi_26. Focus on customer satisfaction.,Support
+Chaitra_27,54,42,4.3,96,52.400000000000006,🌱 Beginner,Consistent Performer,Good progress Chaitra_27. Focus on customer satisfaction.,Support
+Varun_28,66,47,4.8,82,58.3,⭐ Rising,Customer Hero,"Varun_28, improving attendance can boost performance.",Sales
+Vikram_29,93,58,4.4,90,72.4,🔥 Pro,Sales Ninja,Good progress Vikram_29. Focus on customer satisfaction.,Operations
+Lakshmi_30,57,39,4.3,96,52.7,🌱 Beginner,Consistent Performer,Good progress Lakshmi_30. Focus on customer satisfaction.,Support
+Rahul_31,96,58,4.7,98,75.0,🔥 Pro,Sales Ninja,Good progress Rahul_31. Focus on customer satisfaction.,Sales
+Suresh_32,82,59,3.9,91,67.39999999999999,⭐ Rising,Consistent Performer,Good progress Suresh_32. Focus on customer satisfaction.,Sales
+Sanjana_33,88,36,4.0,87,62.7,⭐ Rising,Sales Ninja,"Sanjana_33, improving attendance can boost performance.",Operations
+Madhu_34,99,59,4.4,82,74.3,🔥 Pro,Sales Ninja,"Madhu_34, improving attendance can boost performance.",Sales
+Chaitra_35,70,45,3.8,93,58.400000000000006,⭐ Rising,Consistent Performer,Good progress Chaitra_35. Focus on customer satisfaction.,Sales
+Deepak_36,65,31,4.1,100,53.5,🌱 Beginner,Consistent Performer,Good progress Deepak_36. Focus on customer satisfaction.,Operations
+Kiran_37,55,53,4.4,84,55.1,⭐ Rising,Consistent Performer,"Kiran_37, improving attendance can boost performance.",Operations
+Madhu_38,99,34,4.0,97,67.5,⭐ Rising,Sales Ninja,Good progress Madhu_38. Focus on customer satisfaction.,Operations
+Tarun_39,60,38,4.4,95,53.7,🌱 Beginner,Consistent Performer,Good progress Tarun_39. Focus on customer satisfaction.,Operations
+Amit_40,84,54,4.7,88,68.0,⭐ Rising,Consistent Performer,"Amit_40, improving attendance can boost performance.",Operations
+Deepak_41,75,51,4.6,96,64.1,⭐ Rising,Consistent Performer,Good progress Deepak_41. Focus on customer satisfaction.,Sales
+Varun_42,78,33,4.1,84,57.7,⭐ Rising,Consistent Performer,"Varun_42, improving attendance can boost performance.",Sales
+Lakshmi_43,51,48,4.5,100,53.8,🌱 Beginner,Consistent Performer,Good progress Lakshmi_43. Focus on customer satisfaction.,Support
+Divya_44,50,32,4.6,83,47.10000000000001,🌱 Beginner,Consistent Performer,"Divya_44, improving attendance can boost performance.",Support
+Divya_45,54,58,3.8,92,55.8,⭐ Rising,Consistent Performer,Good progress Divya_45. Focus on customer satisfaction.,Sales
+Arjun_46,82,37,4.1,97,61.80000000000001,⭐ Rising,Consistent Performer,Good progress Arjun_46. Focus on customer satisfaction.,Support
+Amit_47,84,34,4.7,100,63.2,⭐ Rising,Consistent Performer,Good progress Amit_47. Focus on customer satisfaction.,Operations
+Rekha_48,80,37,4.7,95,62.0,⭐ Rising,Consistent Performer,Good progress Rekha_48. Focus on customer satisfaction.,Support
+Pooja_49,56,33,4.6,93,50.80000000000001,🌱 Beginner,Consistent Performer,Good progress Pooja_49. Focus on customer satisfaction.,Operations
+Swathi_50,76,44,4.8,83,61.5,⭐ Rising,Customer Hero,"Swathi_50, improving attendance can boost performance.",Support
+Sneha_51,53,42,4.7,85,51.7,🌱 Beginner,Consistent Performer,"Sneha_51, improving attendance can boost performance.",Operations
+Manoj_52,62,36,4.4,86,53.00000000000001,🌱 Beginner,Consistent Performer,"Manoj_52, improving attendance can boost performance.",Sales
+Swathi_53,61,38,4.4,84,53.00000000000001,🌱 Beginner,Consistent Performer,"Swathi_53, improving attendance can boost performance.",Operations
+Praveen_54,85,33,3.9,99,61.6,⭐ Rising,Consistent Performer,Good progress Praveen_54. Focus on customer satisfaction.,Operations
+Rahul_55,55,59,4.7,89,58.0,⭐ Rising,Consistent Performer,"Rahul_55, improving attendance can boost performance.",Support
+Neha_56,76,45,4.4,94,62.1,⭐ Rising,Consistent Performer,Good progress Neha_56. Focus on customer satisfaction.,Operations
+Priya_57,60,42,3.8,94,53.6,🌱 Beginner,Consistent Performer,Good progress Priya_57. Focus on customer satisfaction.,Sales
+Kavya_58,100,55,4.3,95,74.6,🔥 Pro,Sales Ninja,Good progress Kavya_58. Focus on customer satisfaction.,Sales
+Tarun_59,92,52,4.4,88,70.0,⭐ Rising,Sales Ninja,"Tarun_59, improving attendance can boost performance.",Sales
+Nisha_60,63,60,3.9,99,60.9,⭐ Rising,Consistent Performer,Good progress Nisha_60. Focus on customer satisfaction.,Sales
+Priya_61,97,40,3.9,100,68.60000000000001,⭐ Rising,Sales Ninja,Good progress Priya_61. Focus on customer satisfaction.,Support
+Gopi_62,82,59,4.8,87,68.8,⭐ Rising,Customer Hero,"Gopi_62, improving attendance can boost performance.",Sales
+Priya_63,82,32,4.8,84,60.400000000000006,⭐ Rising,Customer Hero,"Priya_63, improving attendance can boost performance.",Sales
+Chaitra_64,54,51,4.8,94,55.9,⭐ Rising,Customer Hero,Good progress Chaitra_64. Focus on customer satisfaction.,Support
+Vikram_65,86,37,4.5,83,62.8,⭐ Rising,Sales Ninja,"Vikram_65, improving attendance can boost performance.",Support
+Ganesh_66,55,43,4.6,100,54.1,🌱 Beginner,Consistent Performer,Good progress Ganesh_66. Focus on customer satisfaction.,Sales
+Varun_67,70,59,4.1,92,63.10000000000001,⭐ Rising,Consistent Performer,Good progress Varun_67. Focus on customer satisfaction.,Operations
+Manoj_68,66,42,4.0,91,56.1,⭐ Rising,Consistent Performer,Good progress Manoj_68. Focus on customer satisfaction.,Sales
+Keerthi_69,70,59,4.7,84,63.5,⭐ Rising,Consistent Performer,"Keerthi_69, improving attendance can boost performance.",Operations
+Rahul_70,79,49,5.0,85,64.8,⭐ Rising,Customer Hero,"Rahul_70, improving attendance can boost performance.",Support
+Arjun_71,84,36,4.4,86,61.8,⭐ Rising,Consistent Performer,"Arjun_71, improving attendance can boost performance.",Sales
+Ajay_72,54,58,4.1,91,56.3,⭐ Rising,Consistent Performer,Good progress Ajay_72. Focus on customer satisfaction.,Operations
+Neha_73,78,56,4.5,91,66.1,⭐ Rising,Consistent Performer,Good progress Neha_73. Focus on customer satisfaction.,Operations
+Ganesh_74,91,46,3.8,99,67.7,⭐ Rising,Sales Ninja,Good progress Ganesh_74. Focus on customer satisfaction.,Support
+Deepak_75,92,33,4.9,86,65.1,⭐ Rising,Customer Hero,"Deepak_75, improving attendance can boost performance.",Sales
+Kavya_76,57,58,3.9,99,57.9,⭐ Rising,Consistent Performer,Good progress Kavya_76. Focus on customer satisfaction.,Support
+Ravi_77,67,39,4.5,92,56.7,⭐ Rising,Consistent Performer,Good progress Ravi_77. Focus on customer satisfaction.,Support
+Amit_78,93,50,4.8,98,71.60000000000001,🔥 Pro,Customer Hero,Good progress Amit_78. Focus on customer satisfaction.,Sales
+Ramesh_79,66,58,4.9,83,61.89999999999999,⭐ Rising,Customer Hero,"Ramesh_79, improving attendance can boost performance.",Sales
+Kiran_80,90,43,4.8,83,66.8,⭐ Rising,Customer Hero,"Kiran_80, improving attendance can boost performance.",Support
+Rahul_81,71,54,4.0,90,61.6,⭐ Rising,Consistent Performer,Good progress Rahul_81. Focus on customer satisfaction.,Operations
+Neha_82,97,44,4.5,95,70.5,🔥 Pro,Sales Ninja,Good progress Neha_82. Focus on customer satisfaction.,Sales
+Tarun_83,50,33,3.9,86,46.3,🌱 Beginner,Consistent Performer,"Tarun_83, improving attendance can boost performance.",Sales
+Madhu_84,52,56,4.2,99,55.9,⭐ Rising,Consistent Performer,Good progress Madhu_84. Focus on customer satisfaction.,Support
+Ravi_85,77,34,3.9,93,58.1,⭐ Rising,Consistent Performer,Good progress Ravi_85. Focus on customer satisfaction.,Support
+John_86,72,36,4.6,85,57.3,⭐ Rising,Consistent Performer,"John_86, improving attendance can boost performance.",Support
+Ajay_87,99,47,4.9,95,73.0,🔥 Pro,Customer Hero,Good progress Ajay_87. Focus on customer satisfaction.,Operations
+Ganesh_88,97,34,4.9,89,67.7,⭐ Rising,Customer Hero,"Ganesh_88, improving attendance can boost performance.",Support
+Neha_89,61,58,4.3,87,59.1,⭐ Rising,Consistent Performer,"Neha_89, improving attendance can boost performance.",Sales
+Lakshmi_90,100,59,4.3,89,75.2,🔥 Pro,Sales Ninja,"Lakshmi_90, improving attendance can boost performance.",Sales
+Rohit_91,60,55,4.6,94,59.1,⭐ Rising,Consistent Performer,Good progress Rohit_91. Focus on customer satisfaction.,Sales
+John_92,80,37,4.0,96,60.7,⭐ Rising,Consistent Performer,Good progress John_92. Focus on customer satisfaction.,Sales
+Ajay_93,69,56,4.8,89,62.900000000000006,⭐ Rising,Customer Hero,"Ajay_93, improving attendance can boost performance.",Operations
+Divya_94,51,51,4.0,92,52.900000000000006,🌱 Beginner,Consistent Performer,Good progress Divya_94. Focus on customer satisfaction.,Support
+Rohit_95,54,60,4.7,93,58.3,⭐ Rising,Consistent Performer,Good progress Rohit_95. Focus on customer satisfaction.,Sales
+Sanjana_96,75,51,5.0,99,65.2,⭐ Rising,Customer Hero,Good progress Sanjana_96. Focus on customer satisfaction.,Sales
+Lakshmi_97,51,33,4.9,90,49.10000000000001,🌱 Beginner,Customer Hero,Good progress Lakshmi_97. Focus on customer satisfaction.,Sales
+Suresh_98,87,60,5.0,83,71.10000000000001,🔥 Pro,Customer Hero,"Suresh_98, improving attendance can boost performance.",Operations
+Sneha_99,88,43,4.2,92,65.7,⭐ Rising,Sales Ninja,Good progress Sneha_99. Focus on customer satisfaction.,Sales
+Swathi_100,88,46,3.9,100,66.8,⭐ Rising,Sales Ninja,Good progress Swathi_100. Focus on customer satisfaction.,Support
+Pooja_101,66,31,4.7,82,53.3,🌱 Beginner,Consistent Performer,"Pooja_101, improving attendance can boost performance.",Support
+Varun_102,84,51,4.7,88,67.1,⭐ Rising,Consistent Performer,"Varun_102, improving attendance can boost performance.",Operations
+Tejas_103,77,32,4.9,92,59.400000000000006,⭐ Rising,Customer Hero,Good progress Tejas_103. Focus on customer satisfaction.,Sales
+Ganesh_104,70,51,4.8,91,62.0,⭐ Rising,Customer Hero,Good progress Ganesh_104. Focus on customer satisfaction.,Support
+Sanjana_105,69,51,4.3,94,60.9,⭐ Rising,Consistent Performer,Good progress Sanjana_105. Focus on customer satisfaction.,Sales
+Nisha_106,85,34,4.0,94,61.6,⭐ Rising,Consistent Performer,Good progress Nisha_106. Focus on customer satisfaction.,Support
+Suresh_107,89,48,4.2,99,68.3,⭐ Rising,Sales Ninja,Good progress Suresh_107. Focus on customer satisfaction.,Operations
+Rahul_108,69,39,4.1,100,57.5,⭐ Rising,Consistent Performer,Good progress Rahul_108. Focus on customer satisfaction.,Sales
+Chaitra_109,91,40,4.4,96,66.80000000000001,⭐ Rising,Sales Ninja,Good progress Chaitra_109. Focus on customer satisfaction.,Sales
+Amit_110,82,45,4.8,87,64.60000000000001,⭐ Rising,Customer Hero,"Amit_110, improving attendance can boost performance.",Support
+Kiran_111,68,46,4.6,92,59.400000000000006,⭐ Rising,Consistent Performer,Good progress Kiran_111. Focus on customer satisfaction.,Support
+Kiran_112,98,37,4.6,89,68.4,⭐ Rising,Sales Ninja,"Kiran_112, improving attendance can boost performance.",Support
+Pooja_113,59,30,3.9,97,50.10000000000001,🌱 Beginner,Consistent Performer,Good progress Pooja_113. Focus on customer satisfaction.,Support
+Ganesh_114,99,32,4.3,100,67.80000000000001,⭐ Rising,Sales Ninja,Good progress Ganesh_114. Focus on customer satisfaction.,Sales
+Pooja_115,95,52,4.3,94,71.60000000000001,🔥 Pro,Sales Ninja,Good progress Pooja_115. Focus on customer satisfaction.,Support
+Manoj_116,59,50,4.6,85,56.3,⭐ Rising,Consistent Performer,"Manoj_116, improving attendance can boost performance.",Sales
+Swathi_117,64,35,4.8,98,55.5,⭐ Rising,Customer Hero,Good progress Swathi_117. Focus on customer satisfaction.,Sales
+Keerthi_118,53,47,4.1,85,52.00000000000001,🌱 Beginner,Consistent Performer,"Keerthi_118, improving attendance can boost performance.",Support
+Keerthi_119,58,55,4.4,98,58.3,⭐ Rising,Consistent Performer,Good progress Keerthi_119. Focus on customer satisfaction.,Sales
+Tarun_120,88,40,4.9,96,66.6,⭐ Rising,Customer Hero,Good progress Tarun_120. Focus on customer satisfaction.,Support
+Ganesh_121,96,58,4.4,99,74.50000000000001,🔥 Pro,Sales Ninja,Good progress Ganesh_121. Focus on customer satisfaction.,Sales
+Praveen_122,60,53,4.8,96,59.1,⭐ Rising,Customer Hero,Good progress Praveen_122. Focus on customer satisfaction.,Operations
+Kavya_123,98,37,4.8,90,68.9,⭐ Rising,Customer Hero,Good progress Kavya_123. Focus on customer satisfaction.,Sales
+Varun_124,81,50,4.1,96,65.2,⭐ Rising,Consistent Performer,Good progress Varun_124. Focus on customer satisfaction.,Support
+Arjun_125,95,39,4.1,92,67.10000000000001,⭐ Rising,Sales Ninja,Good progress Arjun_125. Focus on customer satisfaction.,Operations
+Harsha_126,84,32,4.0,89,60.1,⭐ Rising,Consistent Performer,"Harsha_126, improving attendance can boost performance.",Support
+Anil_127,94,34,4.6,84,65.4,⭐ Rising,Sales Ninja,"Anil_127, improving attendance can boost performance.",Operations
+Karthik_128,76,40,4.5,95,60.900000000000006,⭐ Rising,Consistent Performer,Good progress Karthik_128. Focus on customer satisfaction.,Operations
+Priya_129,63,56,4.3,100,60.6,⭐ Rising,Consistent Performer,Good progress Priya_129. Focus on customer satisfaction.,Support
+Anita_130,98,48,4.3,82,70.4,🔥 Pro,Sales Ninja,"Anita_130, improving attendance can boost performance.",Support
+Ajay_131,69,54,4.3,95,61.9,⭐ Rising,Consistent Performer,Good progress Ajay_131. Focus on customer satisfaction.,Support
+Madhu_132,97,53,4.5,89,72.60000000000001,🔥 Pro,Sales Ninja,"Madhu_132, improving attendance can boost performance.",Operations
+Ramesh_133,64,38,4.3,82,53.8,🌱 Beginner,Consistent Performer,"Ramesh_133, improving attendance can boost performance.",Support
+Anil_134,71,51,4.6,94,62.3,⭐ Rising,Consistent Performer,Good progress Anil_134. Focus on customer satisfaction.,Support
+Neha_135,79,59,4.0,99,67.2,⭐ Rising,Consistent Performer,Good progress Neha_135. Focus on customer satisfaction.,Support
+Anita_136,75,48,4.5,82,61.6,⭐ Rising,Consistent Performer,"Anita_136, improving attendance can boost performance.",Support
+Kiran_137,91,43,4.0,96,66.9,⭐ Rising,Sales Ninja,Good progress Kiran_137. Focus on customer satisfaction.,Sales
+Suresh_138,53,38,4.3,88,50.0,🌱 Beginner,Consistent Performer,"Suresh_138, improving attendance can boost performance.",Operations
+Keerthi_139,70,40,4.7,94,58.8,⭐ Rising,Consistent Performer,Good progress Keerthi_139. Focus on customer satisfaction.,Operations
+Rohit_140,98,60,4.8,90,75.80000000000001,🔥 Pro,Customer Hero,Good progress Rohit_140. Focus on customer satisfaction.,Operations
+Kiran_141,80,30,4.7,83,58.7,⭐ Rising,Consistent Performer,"Kiran_141, improving attendance can boost performance.",Sales
+Ajay_142,64,50,3.9,83,56.7,⭐ Rising,Consistent Performer,"Ajay_142, improving attendance can boost performance.",Support
+Anita_143,65,36,4.8,86,55.0,🌱 Beginner,Customer Hero,"Anita_143, improving attendance can boost performance.",Sales
+Manoj_144,58,45,4.6,100,55.900000000000006,⭐ Rising,Consistent Performer,Good progress Manoj_144. Focus on customer satisfaction.,Support
+Amit_145,79,52,4.1,93,64.7,⭐ Rising,Consistent Performer,Good progress Amit_145. Focus on customer satisfaction.,Operations
+Neha_146,88,49,5.0,85,68.4,⭐ Rising,Customer Hero,"Neha_146, improving attendance can boost performance.",Sales
+Neha_147,69,33,4.5,91,55.6,⭐ Rising,Consistent Performer,Good progress Neha_147. Focus on customer satisfaction.,Support
+Rekha_148,93,59,4.9,94,74.10000000000001,🔥 Pro,Customer Hero,Good progress Rekha_148. Focus on customer satisfaction.,Sales
+Pooja_149,54,48,4.6,89,54.1,🌱 Beginner,Consistent Performer,"Pooja_149, improving attendance can boost performance.",Support
+Sneha_150,94,54,4.2,85,70.69999999999999,🔥 Pro,Sales Ninja,"Sneha_150, improving attendance can boost performance.",Operations
+Rekha_151,100,31,4.2,95,67.19999999999999,⭐ Rising,Sales Ninja,Good progress Rekha_151. Focus on customer satisfaction.,Sales
+Tejas_152,54,46,4.6,82,52.8,🌱 Beginner,Consistent Performer,"Tejas_152, improving attendance can boost performance.",Operations
+Karthik_153,81,33,4.3,93,60.2,⭐ Rising,Consistent Performer,Good progress Karthik_153. Focus on customer satisfaction.,Sales
+Keerthi_154,95,34,4.3,98,66.60000000000001,⭐ Rising,Sales Ninja,Good progress Keerthi_154. Focus on customer satisfaction.,Support
+Rohit_155,89,55,4.9,97,71.60000000000001,🔥 Pro,Customer Hero,Good progress Rohit_155. Focus on customer satisfaction.,Sales
+Keerthi_156,77,56,4.7,90,66.0,⭐ Rising,Consistent Performer,Good progress Keerthi_156. Focus on customer satisfaction.,Operations
+Harsha_157,65,56,4.9,90,61.6,⭐ Rising,Customer Hero,Good progress Harsha_157. Focus on customer satisfaction.,Sales
+Praveen_158,65,54,4.4,94,60.4,⭐ Rising,Consistent Performer,Good progress Praveen_158. Focus on customer satisfaction.,Operations
+Lakshmi_159,51,45,4.8,87,52.20000000000001,🌱 Beginner,Customer Hero,"Lakshmi_159, improving attendance can boost performance.",Sales
+Ramesh_160,63,41,4.8,92,56.3,⭐ Rising,Customer Hero,Good progress Ramesh_160. Focus on customer satisfaction.,Operations
+Rohit_161,88,52,4.9,99,70.50000000000001,🔥 Pro,Customer Hero,Good progress Rohit_161. Focus on customer satisfaction.,Support
+Rahul_162,83,60,4.0,89,68.10000000000001,⭐ Rising,Consistent Performer,"Rahul_162, improving attendance can boost performance.",Support
+Karthik_163,81,47,4.7,97,65.6,⭐ Rising,Consistent Performer,Good progress Karthik_163. Focus on customer satisfaction.,Sales
+Ramesh_164,78,55,3.8,91,64.4,⭐ Rising,Consistent Performer,Good progress Ramesh_164. Focus on customer satisfaction.,Sales
+Divya_165,75,52,4.1,100,63.8,⭐ Rising,Consistent Performer,Good progress Divya_165. Focus on customer satisfaction.,Support
+Tejas_166,80,47,4.4,95,64.4,⭐ Rising,Consistent Performer,Good progress Tejas_166. Focus on customer satisfaction.,Operations
+Tarun_167,71,41,4.6,90,58.900000000000006,⭐ Rising,Consistent Performer,Good progress Tarun_167. Focus on customer satisfaction.,Operations
+Deepak_168,66,37,3.9,88,54.1,🌱 Beginner,Consistent Performer,"Deepak_168, improving attendance can boost performance.",Operations
+Harsha_169,57,53,4.4,87,56.2,⭐ Rising,Consistent Performer,"Harsha_169, improving attendance can boost performance.",Support
+Pooja_170,63,53,4.4,100,59.900000000000006,⭐ Rising,Consistent Performer,Good progress Pooja_170. Focus on customer satisfaction.,Operations
+Varun_171,88,39,5.0,88,65.7,⭐ Rising,Customer Hero,"Varun_171, improving attendance can boost performance.",Sales
+Nisha_172,64,41,4.0,82,54.1,🌱 Beginner,Consistent Performer,"Nisha_172, improving attendance can boost performance.",Sales
+Madhu_173,58,38,3.9,83,50.7,🌱 Beginner,Consistent Performer,"Madhu_173, improving attendance can boost performance.",Support
+Tarun_174,68,52,4.9,97,62.30000000000001,⭐ Rising,Customer Hero,Good progress Tarun_174. Focus on customer satisfaction.,Support
+Sneha_175,50,48,4.1,97,52.3,🌱 Beginner,Consistent Performer,Good progress Sneha_175. Focus on customer satisfaction.,Support
+Praveen_176,71,35,5.0,90,57.900000000000006,⭐ Rising,Customer Hero,Good progress Praveen_176. Focus on customer satisfaction.,Operations
+Gopi_177,57,56,3.9,97,57.10000000000001,⭐ Rising,Consistent Performer,Good progress Gopi_177. Focus on customer satisfaction.,Sales
+Arjun_178,86,50,4.6,86,67.2,⭐ Rising,Sales Ninja,"Arjun_178, improving attendance can boost performance.",Sales
+Ravi_179,86,60,4.2,89,69.7,⭐ Rising,Sales Ninja,"Ravi_179, improving attendance can boost performance.",Sales
+Vikram_180,85,54,4.3,89,67.7,⭐ Rising,Consistent Performer,"Vikram_180, improving attendance can boost performance.",Sales
+Varun_181,74,44,4.9,91,61.7,⭐ Rising,Customer Hero,Good progress Varun_181. Focus on customer satisfaction.,Operations
+Naveen_182,77,39,4.5,83,59.8,⭐ Rising,Consistent Performer,"Naveen_182, improving attendance can boost performance.",Sales
+Ganesh_183,97,33,4.9,88,67.3,⭐ Rising,Customer Hero,"Ganesh_183, improving attendance can boost performance.",Operations
+Amit_184,66,51,3.9,89,58.4,⭐ Rising,Consistent Performer,"Amit_184, improving attendance can boost performance.",Support
+Suresh_185,85,32,4.0,95,61.1,⭐ Rising,Consistent Performer,Good progress Suresh_185. Focus on customer satisfaction.,Support
+Praveen_186,94,49,4.4,83,69.39999999999999,⭐ Rising,Sales Ninja,"Praveen_186, improving attendance can boost performance.",Sales
+Divya_187,68,52,4.1,96,60.60000000000001,⭐ Rising,Consistent Performer,Good progress Divya_187. Focus on customer satisfaction.,Sales
+Arjun_188,93,37,4.9,100,68.10000000000001,⭐ Rising,Customer Hero,Good progress Arjun_188. Focus on customer satisfaction.,Support
+Pooja_189,77,33,4.5,86,58.3,⭐ Rising,Consistent Performer,"Pooja_189, improving attendance can boost performance.",Operations
+Rohit_190,59,32,3.9,91,50.1,🌱 Beginner,Consistent Performer,Good progress Rohit_190. Focus on customer satisfaction.,Support
+Chaitra_191,97,56,4.5,91,73.7,🔥 Pro,Sales Ninja,Good progress Chaitra_191. Focus on customer satisfaction.,Sales
+Praveen_192,57,44,4.6,94,54.6,🌱 Beginner,Consistent Performer,Good progress Praveen_192. Focus on customer satisfaction.,Sales
+Rohit_193,82,47,4.4,84,64.10000000000001,⭐ Rising,Consistent Performer,"Rohit_193, improving attendance can boost performance.",Support
+Chaitra_194,52,58,4.3,92,56.00000000000001,⭐ Rising,Consistent Performer,Good progress Chaitra_194. Focus on customer satisfaction.,Support
+Chaitra_195,66,30,3.9,100,53.2,🌱 Beginner,Consistent Performer,Good progress Chaitra_195. Focus on customer satisfaction.,Sales
+Naveen_196,51,54,4.6,90,54.8,🌱 Beginner,Consistent Performer,Good progress Naveen_196. Focus on customer satisfaction.,Sales
+Rekha_197,52,54,4.7,97,56.1,⭐ Rising,Consistent Performer,Good progress Rekha_197. Focus on customer satisfaction.,Operations
+Varun_198,91,44,4.9,87,68.1,⭐ Rising,Customer Hero,"Varun_198, improving attendance can boost performance.",Support
+Naveen_199,77,50,4.8,84,63.8,⭐ Rising,Customer Hero,"Naveen_199, improving attendance can boost performance.",Support
+Gopi_200,72,43,4.2,85,58.6,⭐ Rising,Consistent Performer,"Gopi_200, improving attendance can boost performance.",Sales
+Neha_201,71,43,4.6,91,59.60000000000001,⭐ Rising,Consistent Performer,Good progress Neha_201. Focus on customer satisfaction.,Operations
+Bhavna_202,98,47,3.8,84,69.30000000000001,⭐ Rising,Sales Ninja,"Bhavna_202, improving attendance can boost performance.",Operations
+Harsha_203,66,40,3.9,94,55.6,⭐ Rising,Consistent Performer,Good progress Harsha_203. Focus on customer satisfaction.,Sales
+Sanjana_204,50,51,4.8,96,54.5,🌱 Beginner,Customer Hero,Good progress Sanjana_204. Focus on customer satisfaction.,Support
+Karthik_205,53,36,4.4,97,50.5,🌱 Beginner,Consistent Performer,Good progress Karthik_205. Focus on customer satisfaction.,Operations
+Praveen_206,98,31,4.0,99,66.4,⭐ Rising,Sales Ninja,Good progress Praveen_206. Focus on customer satisfaction.,Support
+Meena_207,68,44,4.9,97,59.900000000000006,⭐ Rising,Customer Hero,Good progress Meena_207. Focus on customer satisfaction.,Support
+Vikram_208,51,50,4.5,89,53.3,🌱 Beginner,Consistent Performer,"Vikram_208, improving attendance can boost performance.",Operations
+Neha_209,69,47,3.8,95,58.8,⭐ Rising,Consistent Performer,Good progress Neha_209. Focus on customer satisfaction.,Sales
+Kiran_210,64,56,4.9,96,61.8,⭐ Rising,Customer Hero,Good progress Kiran_210. Focus on customer satisfaction.,Sales
+Vikram_211,91,56,4.0,91,70.3,🔥 Pro,Sales Ninja,Good progress Vikram_211. Focus on customer satisfaction.,Operations
+Sanjana_212,95,38,4.3,97,67.7,⭐ Rising,Sales Ninja,Good progress Sanjana_212. Focus on customer satisfaction.,Sales
+Gopi_213,65,44,4.5,94,57.6,⭐ Rising,Consistent Performer,Good progress Gopi_213. Focus on customer satisfaction.,Support
+Pooja_214,88,46,4.7,86,67.0,⭐ Rising,Sales Ninja,"Pooja_214, improving attendance can boost performance.",Sales
+Arjun_215,67,54,4.7,95,61.9,⭐ Rising,Consistent Performer,Good progress Arjun_215. Focus on customer satisfaction.,Sales
+Lakshmi_216,100,46,4.1,82,70.2,🔥 Pro,Sales Ninja,"Lakshmi_216, improving attendance can boost performance.",Operations
+Nisha_217,96,39,4.8,100,69.70000000000002,⭐ Rising,Customer Hero,Good progress Nisha_217. Focus on customer satisfaction.,Support
+Ramesh_218,59,44,4.4,93,54.89999999999999,🌱 Beginner,Consistent Performer,Good progress Ramesh_218. Focus on customer satisfaction.,Support
+Lakshmi_219,85,54,4.5,96,68.80000000000001,⭐ Rising,Consistent Performer,Good progress Lakshmi_219. Focus on customer satisfaction.,Operations
+Harsha_220,62,52,4.1,94,58.0,⭐ Rising,Consistent Performer,Good progress Harsha_220. Focus on customer satisfaction.,Support
+Nishith,100,100,5.0,100,90.0,🏆 Elite,Customer Hero,Excellent work Nishith! You're leading the team.,Support
+Nishith,100,100,5.0,100,,,,,Support
+Pooja_223,95,32,3.8,98,,,,,Sales
+Swathi_224,100,40,4.7,85,,,,,Sales
+Keerthi_225,79,38,4.9,97,,,,,Support
+Nisha_226,99,39,3.9,96,,,,,Operations
+Karthik_227,97,43,4.1,96,,,,,Sales
+Tejas_228,94,31,3.9,98,,,,,Sales
+Ajay_229,93,38,4.9,83,,,,,Sales
+Rahul_230,79,40,4.5,82,,,,,Operations
+Amit_231,73,46,4.6,96,,,,,Support
+Rohit_232,67,47,4.3,98,,,,,Operations
+Rahul_233,72,37,4.6,86,,,,,Operations
+Sneha_234,87,54,4.1,86,,,,,Sales
+Anita_235,50,52,4.9,98,,,,,Sales
+Vikram_236,68,52,3.8,97,,,,,Support
+Sneha_237,92,48,4.3,84,,,,,Sales
+Manoj_238,89,41,4.0,98,,,,,Support
+Ravi_239,62,38,4.4,86,,,,,Operations
+Neha_240,82,51,4.3,83,,,,,Sales
+Karthik_241,85,60,4.5,86,,,,,Support
+Swathi_242,96,55,4.8,87,,,,,Operations
+Keerthi_243,51,49,4.2,92,,,,,Sales
+Lakshmi_244,66,44,3.9,87,,,,,Sales
+Rahul_245,55,42,4.1,90,,,,,Operations
+Suresh_246,98,60,4.3,93,,,,,Sales
+Anita_247,54,37,4.9,92,,,,,Operations
+Keerthi_248,89,55,4.0,94,,,,,Support
+Ajay_249,81,55,4.7,90,,,,,Support
+Ajay_250,86,46,4.5,97,,,,,Support
+Keerthi_251,52,51,4.1,100,,,,,Operations
+Tejas_252,51,47,4.6,91,,,,,Sales
+Praveen_253,93,36,3.9,94,,,,,Sales
+Sneha_254,71,59,4.8,91,,,,,Sales
+Ravi_255,58,58,4.8,97,,,,,Operations
+Suresh_256,55,42,4.2,82,,,,,Sales
+Anita_257,76,59,5.0,95,,,,,Sales
+Kiran_258,96,60,4.4,89,,,,,Sales
+Kavya_259,77,37,4.9,85,,,,,Sales
+Kiran_260,72,35,4.9,90,,,,,Support
+Anil_261,68,31,4.5,82,,,,,Operations
+Meena_262,68,46,4.4,86,,,,,Operations
+Manoj_263,98,36,4.2,99,,,,,Sales
+Ravi_264,65,36,4.4,89,,,,,Support
+Lakshmi_265,79,41,4.2,91,,,,,Support
+Anita_266,95,58,4.6,96,,,,,Operations
+Sneha_267,59,45,4.6,96,,,,,Operations
+Priya_268,92,31,4.1,94,,,,,Operations
+Nisha_269,69,60,3.8,89,,,,,Operations
+Arjun_270,62,52,4.0,83,,,,,Support
+Neha_271,81,46,4.6,85,,,,,Sales
+Rahul_272,53,33,4.5,85,,,,,Sales
+Anita_273,69,54,4.8,95,,,,,Operations
+Karthik_274,94,33,4.0,97,,,,,Support
+Ravi_275,77,42,4.5,99,,,,,Operations
+Deepak_276,98,44,3.8,85,,,,,Support
+Swathi_277,77,42,4.0,88,,,,,Sales
+Divya_278,93,48,4.2,94,,,,,Operations
+Kiran_279,82,32,4.5,88,,,,,Operations
+Rohit_280,72,53,4.6,86,,,,,Sales
+Anita_281,88,33,3.9,99,,,,,Sales
+Nisha_282,54,32,4.8,91,,,,,Support
+Harsha_283,61,50,3.9,92,,,,,Support
+Lakshmi_284,58,46,4.5,96,,,,,Sales
+Praveen_285,92,40,4.8,84,,,,,Operations
+Pooja_286,100,60,4.2,93,,,,,Operations
+Manoj_287,95,41,4.7,91,,,,,Operations
+Rahul_288,51,48,4.9,97,,,,,Support
+Ajay_289,98,51,4.1,93,,,,,Operations
+Meena_290,82,53,3.9,83,,,,,Operations
+Suresh_291,72,49,4.2,99,,,,,Sales
+Vikram_292,64,48,4.1,93,,,,,Support
+Deepak_293,91,34,4.4,94,,,,,Support
+Karthik_294,87,51,4.6,89,,,,,Support
+Sneha_295,82,30,4.8,94,,,,,Sales
+Pooja_296,60,56,4.6,94,,,,,Sales
+Kavya_297,68,43,4.9,92,,,,,Operations
+Deepak_298,79,45,4.9,82,,,,,Operations
+Bhavna_299,64,40,4.8,96,,,,,Sales
+Deepak_300,64,52,4.3,100,,,,,Operations
+Suresh_301,92,58,4.0,89,,,,,Support
+Divya_302,89,51,3.9,86,,,,,Operations
+Kavya_303,100,39,4.3,89,,,,,Operations
+Ravi_304,57,37,4.4,87,,,,,Operations
+Lakshmi_305,66,59,4.2,99,,,,,Sales
+Suresh_306,80,55,3.8,92,,,,,Operations
+Nisha_307,60,41,4.8,89,,,,,Operations
+Suresh_308,78,50,4.1,100,,,,,Operations
+Suresh_309,85,49,4.5,98,,,,,Operations
+Tejas_310,87,49,4.6,86,,,,,Operations
+Priya_311,99,30,4.6,98,,,,,Support
+Anita_312,74,52,4.7,86,,,,,Operations
+Bhavna_313,95,60,4.1,97,,,,,Operations
+Ravi_314,85,47,4.5,83,,,,,Support
+Manoj_315,56,36,4.3,86,,,,,Sales
+Harsha_316,64,51,4.8,95,,,,,Operations
+Nisha_317,76,31,4.1,82,,,,,Operations
+Bhavna_318,64,51,4.7,99,,,,,Operations
+Rohit_319,76,54,4.6,84,,,,,Sales
+Vikram_320,65,50,4.5,97,,,,,Sales
+Anita_321,83,54,4.4,86,,,,,Operations
+Tejas_322,71,47,4.5,89,,,,,Sales
+Neha_323,90,30,4.7,87,,,,,Support
+Lakshmi_324,100,32,4.4,86,,,,,Operations
+Tejas_325,63,52,4.8,83,,,,,Sales
+Kiran_326,95,47,4.3,87,,,,,Sales
+Praveen_327,97,34,4.0,83,,,,,Support
+Karthik_328,88,42,3.8,99,,,,,Operations
+Rahul_329,64,39,4.5,94,,,,,Support
+Deepak_330,73,52,4.2,99,,,,,Operations
+Anita_331,85,58,4.8,88,,,,,Sales
+Vikram_332,72,50,3.9,90,,,,,Operations
+Sneha_333,78,36,4.5,96,,,,,Operations
+Karthik_334,54,34,4.9,82,,,,,Sales
+Meena_335,75,40,4.3,94,,,,,Sales
+Meena_336,65,37,4.7,86,,,,,Sales
+Kavya_337,65,57,4.0,100,,,,,Sales
+Keerthi_338,80,53,4.0,94,,,,,Operations
+Karthik_339,98,32,4.9,88,,,,,Sales
+Priya_340,81,58,5.0,86,,,,,Operations
+Pooja_341,51,51,4.0,87,,,,,Support
+Bhavna_342,54,36,4.1,92,,,,,Operations
+Deepak_343,80,45,4.9,91,,,,,Sales
+Praveen_344,85,44,4.8,88,,,,,Support
+Priya_345,92,45,4.1,90,,,,,Operations
+Anita_346,54,36,4.5,85,,,,,Operations
+Tejas_347,82,32,4.1,90,,,,,Sales
+Swathi_348,77,40,4.8,86,,,,,Support
+Vikram_349,76,46,4.0,93,,,,,Support
+Kiran_350,97,31,4.7,90,,,,,Sales
+Suresh_351,78,55,4.2,84,,,,,Sales
+Meena_352,85,35,4.1,89,,,,,Operations
+Arjun_353,91,53,4.6,97,,,,,Sales
+Priya_354,59,45,4.5,98,,,,,Operations
+Bhavna_355,95,52,4.7,95,,,,,Sales
+Sneha_356,59,42,4.5,90,,,,,Sales
+Kiran_357,68,44,4.8,89,,,,,Support
+Suresh_358,80,51,4.0,99,,,,,Support
+Anita_359,67,55,4.1,99,,,,,Sales
+Meena_360,53,48,5.0,87,,,,,Support
+Anita_361,50,59,4.9,96,,,,,Support
+Meena_362,74,32,5.0,91,,,,,Operations
+Manoj_363,67,39,4.6,96,,,,,Support
+John_364,54,56,4.1,95,,,,,Support
+Harsha_365,97,50,4.3,91,,,,,Operations
+Kavya_366,74,36,4.9,88,,,,,Operations
+Karthik_367,71,30,4.8,95,,,,,Support
+Pooja_368,66,45,4.4,85,,,,,Operations
+Rahul_369,86,33,3.9,84,,,,,Support
+Amit_370,77,57,4.1,92,,,,,Sales
+Swathi_371,99,57,4.6,88,,,,,Sales
+Bhavna_372,51,44,5.0,92,,,,,Operations
+Praveen_373,60,60,3.9,82,,,,,Sales
+Vikram_374,52,35,4.6,83,,,,,Support
+Amit_375,73,37,3.8,83,,,,,Sales
+Anita_376,96,48,4.6,97,,,,,Support
+Rohit_377,67,39,4.8,87,,,,,Sales
+Divya_378,72,36,4.9,99,,,,,Operations
+Praveen_379,82,47,3.8,85,,,,,Support
+Rahul_380,57,38,5.0,93,,,,,Support
+Rohit_381,55,45,4.9,98,,,,,Support
+Priya_382,82,39,4.4,97,,,,,Operations
+Bhavna_383,70,47,4.4,96,,,,,Support
+Meena_384,72,57,4.0,88,,,,,Support
+Swathi_385,73,57,4.7,100,,,,,Support
+Lakshmi_386,61,35,4.2,86,,,,,Sales
+Neha_387,64,53,4.1,95,,,,,Sales
+Neha_388,64,37,4.9,100,,,,,Support
+Suresh_389,95,54,3.9,92,,,,,Sales
+Rahul_390,60,30,4.6,82,,,,,Operations
+Bhavna_391,79,47,4.5,82,,,,,Sales
+Harsha_392,76,32,4.3,87,,,,,Support
+Priya_393,92,30,5.0,84,,,,,Sales
+Meena_394,77,58,4.5,92,,,,,Sales
+Tejas_395,50,40,4.6,85,,,,,Operations
+Amit_396,81,32,4.5,82,,,,,Operations
+Keerthi_397,50,53,4.3,92,,,,,Support
+Nisha_398,90,52,4.4,95,,,,,Sales
+Harsha_399,82,37,4.2,94,,,,,Sales
+Tejas_400,65,40,4.8,86,,,,,Support
+Kiran_401,83,41,5.0,96,,,,,Sales
+Harsha_402,72,53,4.4,90,,,,,Operations
+Priya_403,76,51,4.3,91,,,,,Support
+Praveen_404,65,40,4.5,84,,,,,Operations
+Kavya_405,66,41,3.9,96,,,,,Sales
+Sneha_406,62,48,4.8,95,,,,,Operations
+Bhavna_407,57,47,4.8,95,,,,,Support
+Priya_408,72,40,4.9,95,,,,,Operations
+Praveen_409,83,44,4.1,91,,,,,Sales
+Vikram_410,91,60,4.8,97,,,,,Support
+Karthik_411,57,60,4.0,98,,,,,Operations
+Lakshmi_412,50,46,4.4,87,,,,,Sales
+Bhavna_413,95,56,4.6,100,,,,,Operations
+Karthik_414,98,42,4.6,86,,,,,Support
+Keerthi_415,77,49,4.0,94,,,,,Support
+John_416,65,36,4.1,99,,,,,Support
+Anita_417,71,35,4.9,86,,,,,Support
+Karthik_418,69,37,4.9,95,,,,,Sales
+Kavya_419,70,36,4.3,99,,,,,Support
+Anil_420,75,58,4.3,90,,,,,Support
+Kavya_421,53,58,4.6,93,,,,,Support
+Ravi_422,78,52,4.9,99,,,,,Operations
+Kiran_423,90,53,4.6,97,,,,,Support
+Anita_424,89,39,3.9,85,,,,,Sales
+Kavya_425,93,58,4.3,100,,,,,Support
+Anil_426,77,32,4.7,89,,,,,Operations
+Vikram_427,58,43,3.9,97,,,,,Sales
+Arjun_428,65,42,4.3,98,,,,,Sales
+Rohit_429,75,60,4.3,89,,,,,Support
+Keerthi_430,85,30,4.6,93,,,,,Support
+Priya_431,63,32,4.7,95,,,,,Operations
+Priya_432,71,30,4.4,95,,,,,Operations
+Vikram_433,67,42,4.0,90,,,,,Support
+John_434,81,49,4.3,95,,,,,Operations
+Meena_435,96,44,4.8,86,,,,,Operations
+Meena_436,91,59,4.1,88,,,,,Operations
+Deepak_437,73,53,4.3,88,,,,,Support
+Lakshmi_438,77,50,4.3,89,,,,,Operations
+Kavya_439,52,47,5.0,94,,,,,Support
+Karthik_440,91,60,4.3,100,,,,,Operations
+Sneha_441,93,31,4.0,94,,,,,Support
+Bhavna_442,69,32,4.2,98,,,,,Operations
+Nisha_443,52,45,4.3,99,,,,,Sales
+Priya_444,55,49,4.7,94,,,,,Sales
+Sneha_445,84,34,4.6,86,,,,,Support
+Ajay_446,84,36,4.1,97,,,,,Operations
+John_447,54,32,4.1,99,,,,,Operations
+Anita_448,87,38,3.9,92,,,,,Operations
+Tejas_449,53,33,4.0,86,,,,,Support
+Tejas_450,73,36,4.6,88,,,,,Operations
+Pooja_451,57,53,4.8,85,,,,,Sales
+Deepak_452,91,45,4.2,87,,,,,Sales
+Pooja_453,52,40,4.5,92,,,,,Operations
+Swathi_454,62,56,4.9,85,,,,,Operations
+Harsha_455,92,47,4.6,84,,,,,Support
+Neha_456,100,52,3.9,98,,,,,Sales
+Kiran_457,88,40,4.0,95,,,,,Sales
+John_458,84,56,4.7,87,,,,,Operations
+Praveen_459,61,42,3.8,86,,,,,Sales
+Ravi_460,96,37,3.8,88,,,,,Operations
+Praveen_461,50,38,4.3,97,,,,,Operations
+Ravi_462,73,50,4.9,92,,,,,Operations
+Tejas_463,80,42,4.0,84,,,,,Sales
+Anita_464,76,42,4.5,89,,,,,Support
+Vikram_465,98,47,4.4,98,,,,,Operations
+Nisha_466,51,36,4.2,91,,,,,Support
+Praveen_467,77,52,4.3,85,,,,,Support
+Deepak_468,91,54,4.8,89,,,,,Support
+Manoj_469,63,37,4.5,97,,,,,Support
+Ravi_470,78,40,4.7,100,,,,,Sales
+Priya_471,63,42,4.3,99,,,,,Support
+Praveen_472,89,57,3.9,94,,,,,Support
+Karthik_473,66,47,4.5,91,,,,,Support
+Amit_474,99,47,4.3,94,,,,,Operations
+Ravi_475,73,56,4.4,95,,,,,Support
+Arjun_476,93,56,4.2,90,,,,,Support
+Rahul_477,68,43,4.5,96,,,,,Sales
+Sneha_478,78,58,4.0,90,,,,,Sales
+Swathi_479,50,30,4.9,93,,,,,Operations
+Karthik_480,80,58,4.7,97,,,,,Operations
+Amit_481,89,34,4.7,96,,,,,Operations
+Rahul_482,66,43,4.5,90,,,,,Operations
+Deepak_483,99,51,4.6,100,,,,,Operations
+Tejas_484,51,50,3.8,89,,,,,Operations
+Swathi_485,66,57,3.9,90,,,,,Support
+Keerthi_486,87,36,4.3,96,,,,,Operations
+Praveen_487,92,45,4.9,82,,,,,Support
+Anita_488,91,48,4.0,85,,,,,Operations
+Priya_489,92,55,4.1,83,,,,,Sales
+Pooja_490,85,59,3.8,91,,,,,Operations
+John_491,67,34,4.0,94,,,,,Operations
+Kiran_492,75,33,4.2,96,,,,,Operations
+Tejas_493,89,56,4.0,98,,,,,Operations
+Pooja_494,91,45,4.0,97,,,,,Support
+Keerthi_495,76,39,4.0,99,,,,,Sales
+Ajay_496,94,45,4.0,93,,,,,Sales
+Anita_497,58,39,4.9,90,,,,,Sales
+Praveen_498,55,31,3.9,96,,,,,Sales
+Anil_499,71,31,4.5,86,,,,,Sales
+Bhavna_500,53,48,4.2,85,,,,,Support
+Praveen_501,52,55,4.9,95,,,,,Sales
+Pooja_502,85,55,5.0,90,,,,,Sales
+Tejas_503,53,58,3.9,98,,,,,Support
+Harsha_504,82,30,4.4,91,,,,,Support
+Meena_505,57,56,4.1,93,,,,,Sales
+Meena_506,63,36,4.1,85,,,,,Sales
+Ravi_507,75,45,4.5,83,,,,,Sales
+Harsha_508,50,39,4.7,96,,,,,Sales
+Tejas_509,94,35,4.8,91,,,,,Sales
+Rahul_510,75,53,4.8,90,,,,,Support
+Kavya_511,54,42,4.5,90,,,,,Support
+Ajay_512,91,39,4.0,89,,,,,Support
+Lakshmi_513,87,59,4.9,93,,,,,Support
+Ajay_514,63,33,4.4,93,,,,,Support
+John_515,56,52,4.2,89,,,,,Operations
+Praveen_516,51,51,4.0,95,,,,,Operations
+Pooja_517,61,33,4.0,97,,,,,Operations
+Ajay_518,90,57,4.9,86,,,,,Support
+Divya_519,58,51,4.9,98,,,,,Operations
+Meena_520,65,59,4.8,95,,,,,Operations
+Anil_521,88,54,4.9,92,,,,,Sales
+Swathi_522,69,32,4.6,91,,,,,Support
+Bhavna_523,58,43,4.8,91,,,,,Support
+Swathi_524,51,57,4.3,86,,,,,Operations
+Rahul_525,77,32,4.4,93,,,,,Operations
+Kiran_526,89,57,4.3,88,,,,,Support
+Swathi_527,66,50,4.6,83,,,,,Support
+Deepak_528,91,52,4.0,98,,,,,Operations
+Manoj_529,55,41,4.4,90,,,,,Operations
+Swathi_530,89,55,4.1,97,,,,,Support
+Anita_531,55,54,4.3,93,,,,,Sales
+Deepak_532,90,33,4.1,83,,,,,Sales
+Rahul_533,81,59,3.9,83,,,,,Sales
+Amit_534,57,49,4.0,96,,,,,Sales
+Bhavna_535,81,37,4.7,98,,,,,Sales
+Sneha_536,98,34,4.3,93,,,,,Support
+Praveen_537,84,30,4.8,90,,,,,Sales
+Rahul_538,69,45,4.5,100,,,,,Operations
+Kavya_539,82,50,4.8,93,,,,,Support
+Sneha_540,56,33,4.6,91,,,,,Support
+Harsha_541,100,32,4.2,90,,,,,Support
+Rahul_542,61,60,4.7,95,,,,,Support
+Neha_543,72,48,4.7,98,,,,,Operations
+Priya_544,50,35,4.4,86,,,,,Operations
+John_545,87,37,3.8,100,,,,,Support
+Neha_546,61,47,4.4,91,,,,,Support
+Kiran_547,97,45,4.4,94,,,,,Operations
+Lakshmi_548,70,56,4.4,95,,,,,Support
+Harsha_549,99,35,4.0,84,,,,,Sales
+Sneha_550,89,38,4.0,84,,,,,Operations
+Neha_551,59,47,4.9,91,,,,,Sales
+Meena_552,72,38,4.5,93,,,,,Support
+Priya_553,77,46,4.5,93,,,,,Support
+Swathi_554,54,44,4.3,94,,,,,Sales
+Ajay_555,51,41,4.3,98,,,,,Sales
+Ravi_556,95,47,4.7,96,,,,,Operations
+Keerthi_557,79,46,4.6,93,,,,,Support
+Swathi_558,67,42,4.9,93,,,,,Support
+Keerthi_559,95,41,4.8,99,,,,,Sales
+Rahul_560,79,47,4.4,97,,,,,Support
+Arjun_561,72,35,4.5,95,,,,,Operations
+Deepak_562,91,48,4.4,98,,,,,Operations
+Arjun_563,78,38,4.2,99,,,,,Sales
+Praveen_564,83,40,4.9,97,,,,,Operations
+Divya_565,56,41,4.8,95,,,,,Sales
+Keerthi_566,61,43,4.3,95,,,,,Sales
+Lakshmi_567,92,38,4.8,100,,,,,Sales
+Priya_568,52,58,4.3,83,,,,,Support
+Arjun_569,62,43,4.2,91,,,,,Sales
+Amit_570,63,52,4.6,85,,,,,Sales
+Divya_571,71,52,4.0,92,,,,,Operations
+Tejas_572,60,60,3.8,92,,,,,Operations
+Kiran_573,95,58,4.1,99,,,,,Sales
+Lakshmi_574,100,55,4.1,82,,,,,Sales
+Sneha_575,95,57,4.1,91,,,,,Support
+Harsha_576,85,31,4.3,100,,,,,Sales
+Manoj_577,76,54,4.2,92,,,,,Operations
+Anita_578,67,51,4.5,84,,,,,Operations
+Harsha_579,70,44,3.9,93,,,,,Support
+Kiran_580,74,58,3.8,90,,,,,Support
+Meena_581,85,37,4.0,95,,,,,Operations
+Rohit_582,59,31,4.3,99,,,,,Sales
+Praveen_583,86,51,4.0,86,,,,,Support
+Suresh_584,92,46,4.9,94,,,,,Support
+Neha_585,81,30,4.4,93,,,,,Support
+Vikram_586,78,39,4.5,84,,,,,Operations
+Arjun_587,83,30,4.4,82,,,,,Sales
+Ajay_588,57,37,4.1,93,,,,,Support
+Swathi_589,95,44,4.4,93,,,,,Sales
+Keerthi_590,79,35,5.0,89,,,,,Support
+Vikram_591,96,30,3.9,96,,,,,Sales
+Amit_592,77,35,4.4,88,,,,,Sales
+Rahul_593,84,59,4.4,91,,,,,Operations
+Manoj_594,79,45,4.0,91,,,,,Support
+Anita_595,59,54,4.9,84,,,,,Operations
+John_596,100,42,4.3,94,,,,,Sales
+Amit_597,94,41,4.2,84,,,,,Sales
+Manoj_598,95,43,4.6,91,,,,,Sales
+Rahul_599,88,44,4.5,88,,,,,Sales
+Rohit_600,87,57,4.1,85,,,,,Support
+Tejas_601,99,33,4.7,85,,,,,Sales
+Amit_602,85,52,4.9,90,,,,,Sales
+Divya_603,89,48,4.7,93,,,,,Operations
+Arjun_604,62,38,4.0,82,,,,,Support
+Ravi_605,64,32,4.5,99,,,,,Support
+Ajay_606,82,31,3.9,92,,,,,Operations
+Arjun_607,53,46,4.0,90,,,,,Support
+Kiran_608,52,45,4.4,98,,,,,Sales
+Ravi_609,54,32,4.4,100,,,,,Support
+Ravi_610,81,56,4.9,87,,,,,Operations
+Pooja_611,79,35,3.9,88,,,,,Sales
+Divya_612,72,41,4.4,89,,,,,Operations
+Keerthi_613,81,48,4.7,99,,,,,Operations
+Arjun_614,99,37,3.8,86,,,,,Operations
+Rohit_615,65,55,3.8,92,,,,,Support
+Tejas_616,78,54,4.3,99,,,,,Sales
+Anita_617,50,30,4.6,88,,,,,Operations
+Ravi_618,92,47,4.3,95,,,,,Sales
+Ajay_619,62,57,4.6,92,,,,,Operations
+Neha_620,60,46,4.4,100,,,,,Sales
+Amit_621,57,58,4.5,97,,,,,Support
+Neha_622,76,33,4.6,94,,,,,Sales
+Kavya_623,53,40,4.4,84,,,,,Operations
+Anil_624,66,44,4.8,83,,,,,Sales
+Sneha_625,53,54,4.8,90,,,,,Operations
+Deepak_626,91,33,4.3,87,,,,,Operations
+Karthik_627,73,31,4.8,89,,,,,Sales
+Praveen_628,54,43,4.5,83,,,,,Support
+Anita_629,77,36,4.6,91,,,,,Support
+Anil_630,79,50,5.0,87,,,,,Sales
+Karthik_631,73,39,4.9,99,,,,,Sales
+Swathi_632,90,46,4.1,93,,,,,Support
+Anil_633,60,58,4.2,89,,,,,Operations
+Kiran_634,82,52,4.3,82,,,,,Sales
+Harsha_635,65,31,4.3,85,,,,,Operations
+Swathi_636,84,53,4.1,90,,,,,Support
+Kiran_637,59,36,4.3,90,,,,,Operations
+Ravi_638,84,60,4.9,82,,,,,Support
+Karthik_639,54,33,4.8,94,,,,,Operations
+Deepak_640,50,54,4.8,90,,,,,Sales
+Neha_641,52,44,4.3,89,,,,,Operations
+Nisha_642,52,60,4.9,88,,,,,Operations
+Neha_643,97,41,4.7,96,,,,,Support
+John_644,61,60,4.7,96,,,,,Operations
+Swathi_645,60,35,4.3,86,,,,,Support
+Harsha_646,75,35,3.8,82,,,,,Operations
+Manoj_647,70,52,4.9,85,,,,,Operations
+Sneha_648,78,55,4.3,90,,,,,Support
+Karthik_649,62,58,5.0,88,,,,,Support
+Deepak_650,82,60,4.1,86,,,,,Operations
+Rahul_651,93,36,4.4,100,,,,,Support
+Kavya_652,55,57,4.6,91,,,,,Support
+Neha_653,89,51,4.1,83,,,,,Sales
+Manoj_654,67,37,3.8,91,,,,,Operations
+Praveen_655,92,36,5.0,89,,,,,Support
+Kavya_656,89,57,4.5,89,,,,,Sales
+Praveen_657,61,32,3.8,100,,,,,Sales
+Swathi_658,64,46,4.4,92,,,,,Operations
+Vikram_659,68,31,4.6,84,,,,,Operations
+Neha_660,71,48,4.9,86,,,,,Operations
+Anita_661,60,59,5.0,93,,,,,Operations
+Rohit_662,60,34,4.3,91,,,,,Operations
+John_663,72,51,5.0,83,,,,,Operations
+Praveen_664,51,56,4.4,85,,,,,Support
+Ravi_665,57,49,4.7,88,,,,,Support
+Suresh_666,79,45,4.3,93,,,,,Support
+Meena_667,55,40,4.5,98,,,,,Sales
+Nisha_668,66,45,3.8,99,,,,,Support
+Swathi_669,57,51,5.0,84,,,,,Support
+Priya_670,53,53,4.4,91,,,,,Support
+Karthik_671,64,51,3.9,94,,,,,Operations
+Anita_672,100,44,5.0,87,,,,,Sales
+Bhavna_673,71,57,4.8,86,,,,,Support
+Suresh_674,90,55,4.8,93,,,,,Operations
+Meena_675,56,38,4.7,88,,,,,Operations
+Suresh_676,96,39,4.1,92,,,,,Operations
+Rohit_677,70,36,4.3,97,,,,,Operations
+Suresh_678,90,56,4.1,93,,,,,Sales
+Lakshmi_679,99,36,4.2,97,,,,,Operations
+Karthik_680,89,41,4.5,82,,,,,Support
+Kiran_681,86,46,4.7,92,,,,,Operations
+Nisha_682,59,43,3.9,100,,,,,Sales
+Swathi_683,82,49,4.1,82,,,,,Operations
+Praveen_684,80,54,4.6,97,,,,,Support
+Praveen_685,77,52,4.5,85,,,,,Support
+Keerthi_686,100,42,4.5,99,,,,,Sales
+Swathi_687,55,51,4.8,86,,,,,Operations
+Neha_688,73,46,4.0,89,,,,,Operations
+Neha_689,57,48,3.8,88,,,,,Operations
+Priya_690,54,52,4.6,89,,,,,Support
+Swathi_691,83,50,4.7,84,,,,,Operations
+John_692,71,50,3.8,94,,,,,Sales
+Manoj_693,89,56,3.9,83,,,,,Sales
+Priya_694,70,50,3.8,86,,,,,Support
+Priya_695,93,41,4.1,82,,,,,Support
+Suresh_696,98,48,4.4,86,,,,,Operations
+Kiran_697,71,33,4.0,89,,,,,Sales
+Arjun_698,79,57,4.6,90,,,,,Operations
+Meena_699,51,57,4.9,94,,,,,Sales
+Deepak_700,67,41,4.3,94,,,,,Sales
+Ajay_701,83,60,4.4,86,,,,,Sales
+Deepak_702,72,50,4.3,93,,,,,Operations
+Nisha_703,79,46,4.0,98,,,,,Support
+Suresh_704,100,38,4.6,98,,,,,Sales
+Kavya_705,81,45,4.2,93,,,,,Support
+Kavya_706,56,41,4.0,90,,,,,Sales
+Suresh_707,79,45,4.6,88,,,,,Operations
+Swathi_708,91,42,4.3,83,,,,,Support
+Anita_709,82,52,4.6,99,,,,,Sales
+Priya_710,58,30,3.8,82,,,,,Operations
+Praveen_711,52,38,4.7,90,,,,,Operations
+Anil_712,55,42,4.4,86,,,,,Operations
+Divya_713,63,47,4.9,94,,,,,Support
+Nisha_714,78,36,4.0,83,,,,,Operations
+Rohit_715,100,39,3.9,99,,,,,Sales
+Ajay_716,83,52,4.0,89,,,,,Support
+John_717,87,42,4.9,93,,,,,Support
+Arjun_718,88,40,4.2,99,,,,,Operations
+Neha_719,85,51,4.3,90,,,,,Support
+Arjun_720,59,57,4.7,87,,,,,Sales
+Swathi_721,93,58,4.3,91,,,,,Support
+Amit_722,98,31,4.9,95,,,,,Sales
